@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swipe</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" async></script>
+</head>
+<body>
+    <div class="main-container">
+        <div class="carousel-container">
+            <button id="prev-btn" class="swipe-btn">◀</button>
+            <div class="carousal">
+                    <div class="image-slide" data-index="0">
+                        <img src="page 1.jpg" alt="Image 1" class="image-layout">
+                        <div class="text-overlay">Invitation</div>
+                    </div>
+                    <div class="image-slide" data-index="1">
+                        <img src="Page 2.jpg" alt="Image 2" class="image-layout">
+                        <div class="text-overlay">Invitation</div>
+                    </div>
+                    <div class="image-slide" data-index="2">
+                        <img src="Page 3.jpg" alt="Image 3" class="image-layout">
+                        <div class="text-overlay">Invitation</div>
+                    </div>
+            </div>
+            <button id="next-btn" class="swipe-btn">▶</button>
+        </div>
+
+        <div class="editor">
+            <button class="button" id="add-text-btn">Add Text</button>
+            <label>Font Size:
+                <input type="range" id="font-size-slider" min="10" max="100"/>
+            </label>
+            <label>Font Color:
+                <input type="color" id="font-color-picker"/>
+            </label>
+            <label>Font Style:
+                <select id="font-style-selector">
+                    <option value="Arial">Arial</option>
+                    <option value="Courier New">Courier New</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Times Nwe Roman">Times New Roman</option>
+                    <option value="Verdana">Verdana</option>
+                </select>
+            </label>
+            <label>Alignment:
+                <button data-align="left">Left</button>
+                <button data-align="center">Center</button>
+                <button data-align="right">Right</button>
+            </label>
+        </div>
+    
+    </div>
+</body>
+</html>
